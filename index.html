@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wraper">
+  <div class="container">
+    <!-- STEP 1 -->
+    <form class="multi-form">
+      <div class="step" >
+        <h1>Register</h1>
+      <div class="inputs">
+        <div class="user">
+          <label for="Name">Name</label>
+      <input type="text" name="Name" id="username" placeholder="Enter your name">
+        </div>
+      <div class="email">
+        <label for="Email">Email</label>
+      <input type="email" name="Email" id="em" placeholder="Example@gmail.com">
+      <p class="inv-email">Invalid Email  Adress</p>
+
+      </div>
+      
+      </div>
+      </div>
+      
+
+      <div class="step" style="display: none;">
+        <h1>Which topics you are interested in?</h1>
+  
+        <div class="option">
+          <p >Software Development</p>
+      </div>
+      <div class="option" >
+          <p ">User Experience</p>
+      </div>
+      <div class="option" >
+          <p >Graphic Design</p>
+      </div>
+
+      </div>
+  
+      <!-- STEP 3 -->
+  
+      <div class="step three" style="display: none;">
+        <h1>Summary</h1>
+  
+        <div class="info">
+          <p class="p-user-info">Name:</p>
+          <p class="p-email-info">Email:</p>
+        </div>
+  
+        <div class="topics">
+          <p>Topics:</p>
+          <ul>
+          </ul>
+        </div>
+  
+  
+      </div>
+
+      <button class="btn">Conitnue</button>
+
+      <p class="err-user">Please Enter Username</p>
+      <p class="err-email">Please Enter Email</p>
+
+      <div class="success-msg" >
+        <p class="s-msg">Form submitted successfully!</p>
+      </div>
+      
+    </form>
+
+    
+
+  </div>
+
+  </div> 
+  <script src="script.js"></script>
+</body>
+</html>
